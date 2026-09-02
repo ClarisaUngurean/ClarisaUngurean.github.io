@@ -65,7 +65,6 @@ h1 {
     font-size: 4.7rem;
     line-height: 1.05;
     margin: 15px 0 25px;
-
     letter-spacing: -0.04em;
 }
 
@@ -107,10 +106,8 @@ h3 {
 
 .button {
     display: inline-block;
-
     padding: 12px 20px;
     border-radius: 9px;
-
     font-weight: 600;
 }
 
@@ -204,7 +201,6 @@ footer {
 
 .back-link {
     display: inline-block;
-
     margin-bottom: 55px;
 
     color: #777d8c;
@@ -237,7 +233,6 @@ footer {
 
 .project-meta span {
     color: #8b90a0;
-
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -251,7 +246,6 @@ footer {
     margin-bottom: 5px;
 
     color: #4052d6;
-
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -269,7 +263,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
-
     margin-top: 35px;
 }
 
@@ -283,43 +276,41 @@ footer {
 
 .step-number {
     display: block;
-
     margin-bottom: 25px;
 
     color: #4052d6;
-
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.1em;
 }
 
 
-/* ---------- VIDEO ---------- */
+/* ---------- AI PROJECT VIDEO ---------- */
 
 .video-container {
     width: 100%;
-    max-width: 650px;
+    max-width: 430px;
 
-    margin: 35px auto 0;
-    padding: 12px;
+    margin: 30px auto 0;
+    padding: 8px;
 
     background: white;
     border: 1px solid #e0e3ea;
-    border-radius: 20px;
+    border-radius: 16px;
 
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
 }
 
 .project-video {
     display: block;
 
     width: 100%;
-    max-height: 420px;
+    height: auto;
+    max-height: 320px;
 
     margin: 0 auto;
 
-    border-radius: 12px;
-
+    border-radius: 10px;
     object-fit: contain;
     background: #111;
 }
@@ -346,8 +337,8 @@ footer {
 
 .wim-media {
     display: grid;
-    grid-template-columns: 260px 1fr;
-    gap: 30px;
+    grid-template-columns: 220px 1fr;
+    gap: 28px;
     align-items: center;
 
     margin-top: 25px;
@@ -362,10 +353,9 @@ footer {
     display: block;
 
     width: 100%;
-    max-height: 320px;
+    max-height: 280px;
 
     border-radius: 12px;
-
     object-fit: contain;
     background: #111;
 }
@@ -420,12 +410,16 @@ footer {
         gap: 20px;
     }
 
-    .wim-video {
-        max-width: 350px;
-        margin: 0 auto;
+    .video-container {
+        max-width: 360px;
     }
 
-    .video-container {
-        max-width: 100%;
+    .project-video {
+        max-height: 280px;
+    }
+
+    .wim-video {
+        max-width: 320px;
+        margin: 0 auto;
     }
 }
