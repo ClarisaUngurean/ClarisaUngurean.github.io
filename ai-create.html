@@ -26,22 +26,38 @@
     <main>
 
         <section class="project-hero">
+
+            <a class="back-link" href="index.html#projects">← Back to projects</a>
+        
             <p class="eyebrow">
-                COMPUTER VISION · MACHINE LEARNING · UNIVERSITY OF TORONTO
+                COMPUTER VISION · MACHINE LEARNING
             </p>
         
             <h1>AI Waste Disposal Classifier</h1>
         
             <p class="hero-text">
-                A computer vision system that identifies common waste items through a
-                live camera feed and recommends the appropriate disposal method.
-                Developed during the University of Toronto Engineering CREATE
-                Artificial Intelligence program.
+                A computer vision prototype that identifies common waste items
+                through a live camera feed and recommends the appropriate
+                disposal method.
             </p>
         
-            <p class="tools">
-                Python · TensorFlow/Keras · OpenCV · NumPy · Pandas · Teachable Machine
-            </p>
+            <div class="project-meta">
+                <div>
+                    <span>PROGRAM</span>
+                    <strong>U of T Engineering CREATE</strong>
+                </div>
+        
+                <div>
+                    <span>YEAR</span>
+                    <strong>2025</strong>
+                </div>
+        
+                <div>
+                    <span>TOOLS</span>
+                    <strong>Python · OpenCV · TensorFlow/Keras</strong>
+                </div>
+            </div>
+        
         </section>
 
         <section>
@@ -76,90 +92,85 @@
             <h2>How It Works</h2>
         
             <div class="process">
-        
-                <div class="process-step">
-                    <h3>1. Capture</h3>
-                    <p>
-                        OpenCV captures images continuously from a live webcam feed.
-                    </p>
-                </div>
-        
-                <div class="process-step">
-                    <h3>2. Classify</h3>
-                    <p>
-                        Each frame is resized and normalized before being passed to
-                        the trained image classification model.
-                    </p>
-                </div>
-        
-                <div class="process-step">
-                    <h3>3. Recommend</h3>
-                    <p>
-                        Predictions with more than 65% confidence are mapped to the
-                        corresponding disposal category and displayed to the user.
-                        Lower-confidence predictions are handled separately to avoid
-                        presenting uncertain classifications as reliable results.
-                    </p>
-                </div>
-        
+
+            <div class="process-step">
+                <span class="step-number">01</span>
+                <h3>Capture</h3>
+                <p>
+                    OpenCV continuously captures images from a live webcam feed.
+                </p>
             </div>
+        
+            <div class="process-step">
+                <span class="step-number">02</span>
+                <h3>Classify</h3>
+                <p>
+                    Each frame is resized and normalized before being passed
+                    to the image classification model.
+                </p>
+            </div>
+        
+            <div class="process-step">
+                <span class="step-number">03</span>
+                <h3>Recommend</h3>
+                <p>
+                    Predictions above 65% confidence are mapped to the
+                    corresponding disposal category.
+                </p>
+            </div>
+        </div>
         </section>
 
         <section id="demo">
-            <h2>Live Demo</h2>
+            <p class="section-label">DEMO</p>
+            <h2>See it in action</h2>
         
-            <p>
-                The classifier processes a live camera feed and displays its
-                predicted waste category and disposal recommendation.
+            <p class="section-intro">
+                The system processes a live camera feed, identifies the object,
+                and displays its predicted disposal category.
             </p>
         
-            <video class="project-video" controls>
-                <source src="videos/waste-demo.mp4" type="video/mp4">
-                Your browser does not support video playback.
-            </video>
+            <div class="video-container">
+                <video class="project-video" controls>
+                    <source src="videos/waste-demo.mp4" type="video/mp4">
+                </video>
+            </div>
         </section>
 
-        <section id="code">
-            <h2>Code & Implementation</h2>
-        
-            <p>
-                The project was developed in a Jupyter Notebook using Python,
-                OpenCV, TensorFlow/Keras, NumPy, and Pandas.
-            </p>
-        
-            <a
-                class="button secondary"
-                href="documents/CV_Waste_Disposal_System.ipynb"
-                target="_blank"
-            >
-                View Project Notebook →
-            </a>
-        </section>
-
-        
         <section>
-            <h2>Program</h2>
+            <h2>Project Resources</h2>
         
-            <h3>CREATE: Artificial Intelligence — Sorting It Out!</h3>
+            <div class="resource-grid">
         
-            <p>
-                University of Toronto Faculty of Applied Science & Engineering
-                <br>
-                July 28 – August 1, 2025
-            </p>
+                <div class="resource-card">
+                    <p class="project-type">CODE</p>
+                    <h3>Jupyter Notebook</h3>
+                    <p>
+                        Explore the Python implementation and image-classification
+                        pipeline used in the project.
+                    </p>
         
-            <p>
-                This project was completed as part of the CREATE summer
-                artificial intelligence program.
-            </p>
+                    <a href="documents/CV_Waste_Disposal_System.ipynb"
+                       class="project-link">
+                        View notebook →
+                    </a>
+                </div>
         
-            <a
-                class="button secondary"
-                href="documents/ai-create-certificate.png"
-                target="_blank"
-            >
-                View Certificate →
-            </a>
+                <div class="resource-card">
+                    <p class="project-type">PROGRAM</p>
+                    <h3>U of T Engineering CREATE</h3>
+                    <p>
+                        Artificial Intelligence: Sorting It Out!<br>
+                        July 28 – August 1, 2025
+                    </p>
+        
+                    <a href="documents/YOUR-CERTIFICATE-FILENAME"
+                       class="project-link">
+                        View certificate →
+                    </a>
+                </div>
+        
+            </div>
         </section>
     </main>
 
