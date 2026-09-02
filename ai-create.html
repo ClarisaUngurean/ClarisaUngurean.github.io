@@ -11,7 +11,9 @@
 
 <body>
 
+    <!-- NAVIGATION -->
     <nav class="navbar">
+
         <div class="nav-name">
             <a href="index.html">Clarisa Ungurean</a>
         </div>
@@ -21,158 +23,267 @@
             <a href="index.html#projects">Projects</a>
             <a href="index.html#experience">Experience</a>
         </div>
+
     </nav>
+
 
     <main>
 
+        <!-- PROJECT HERO -->
         <section class="project-hero">
 
-            <a class="back-link" href="index.html#projects">← Back to projects</a>
-        
+            <a class="back-link" href="index.html#projects">
+                ← Back to projects
+            </a>
+
             <p class="eyebrow">
                 COMPUTER VISION · MACHINE LEARNING
             </p>
-        
+
             <h1>AI Waste Disposal Classifier</h1>
-        
+
             <p class="hero-text">
                 A computer vision prototype that identifies common waste items
                 through a live camera feed and recommends the appropriate
                 disposal method.
             </p>
-        
+
             <div class="project-meta">
+
                 <div>
                     <span>PROGRAM</span>
                     <strong>U of T Engineering CREATE</strong>
                 </div>
-        
+
                 <div>
                     <span>YEAR</span>
                     <strong>2025</strong>
                 </div>
-        
+
                 <div>
                     <span>TOOLS</span>
                     <strong>Python · OpenCV · TensorFlow/Keras</strong>
                 </div>
+
             </div>
-        
+
         </section>
 
+
+        <!-- PROBLEM -->
         <section>
-            <h2>The Problem</h2>
-        
-            <p>
-                Waste sorting can become confusing when different materials require
-                different disposal methods. This project explored how computer vision
-                could help automate that decision by recognizing an object and
-                recommending where it should be disposed.
+
+            <p class="section-label">THE PROBLEM</p>
+            <h2>Making waste sorting easier</h2>
+
+            <p class="section-intro">
+                Waste sorting can become confusing when different materials
+                require different disposal methods. This project explored how
+                computer vision could help automate that decision by recognizing
+                an object and recommending where it should be disposed.
             </p>
+
         </section>
 
-       <section>
+
+        <!-- WHAT I BUILT -->
+        <section>
+
+            <p class="section-label">THE PROJECT</p>
             <h2>What I Built</h2>
-        
+
             <p>
-                I worked on a computer vision prototype that processes a live webcam
-                feed, identifies a waste item using an image classification model,
-                and maps the prediction to an appropriate disposal category.
+                I worked on a computer vision prototype that processes a live
+                webcam feed, identifies a waste item using an image classification
+                model, and maps the prediction to an appropriate disposal category.
             </p>
-        
+
             <p>
-                The system processes each camera frame with OpenCV, passes the image
-                to a TensorFlow/Keras classification model, evaluates the model's
-                confidence, and displays both the detected object and its recommended
-                disposal method directly on the video feed.
+                The system processes each camera frame with OpenCV, passes the
+                image to a TensorFlow/Keras classification model, evaluates the
+                model's confidence, and displays both the detected object and its
+                recommended disposal method directly on the video feed.
             </p>
+
         </section>
 
+
+        <!-- HOW IT WORKS -->
         <section>
+
+            <p class="section-label">PROCESS</p>
             <h2>How It Works</h2>
-        
+
             <div class="process">
 
-            <div class="process-step">
-                <span class="step-number">01</span>
-                <h3>Capture</h3>
-                <p>
-                    OpenCV continuously captures images from a live webcam feed.
-                </p>
+                <div class="process-step">
+
+                    <span class="step-number">01</span>
+
+                    <h3>Capture</h3>
+
+                    <p>
+                        OpenCV continuously captures images from a live
+                        webcam feed.
+                    </p>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <span class="step-number">02</span>
+
+                    <h3>Classify</h3>
+
+                    <p>
+                        Each frame is resized and normalized before being
+                        passed to the image classification model.
+                    </p>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <span class="step-number">03</span>
+
+                    <h3>Recommend</h3>
+
+                    <p>
+                        Predictions above 65% confidence are mapped to the
+                        corresponding disposal category.
+                    </p>
+
+                </div>
+
             </div>
-        
-            <div class="process-step">
-                <span class="step-number">02</span>
-                <h3>Classify</h3>
-                <p>
-                    Each frame is resized and normalized before being passed
-                    to the image classification model.
-                </p>
-            </div>
-        
-            <div class="process-step">
-                <span class="step-number">03</span>
-                <h3>Recommend</h3>
-                <p>
-                    Predictions above 65% confidence are mapped to the
-                    corresponding disposal category.
-                </p>
-            </div>
-        </div>
+
         </section>
 
+
+        <!-- DEMO -->
         <section id="demo">
+
             <p class="section-label">DEMO</p>
             <h2>See it in action</h2>
-        
+
             <p class="section-intro">
                 The system processes a live camera feed, identifies the object,
-                and displays its predicted disposal category.
+                and displays its predicted waste category and disposal
+                recommendation.
             </p>
-        
+
             <div class="video-container">
+
                 <video class="project-video" controls>
-                    <source src="videos/waste-demo (1).mp4" type="video/mp4">
+
+                    <source
+                        src="videos/waste-demo (1).mp4"
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support video playback.
+
                 </video>
+
             </div>
+
         </section>
 
+
+        <!-- PROJECT RESOURCES -->
         <section>
-            <h2>Project Resources</h2>
-        
+
+            <p class="section-label">RESOURCES</p>
+            <h2>Explore the Project</h2>
+
             <div class="resource-grid">
-        
+
+
+                <!-- CODE -->
                 <div class="resource-card">
+
                     <p class="project-type">CODE</p>
+
                     <h3>Jupyter Notebook</h3>
+
                     <p>
-                        Explore the Python implementation and image-classification
-                        pipeline used in the project.
+                        Explore the Python implementation and
+                        image-classification pipeline used in the project.
                     </p>
-        
-                    <a href="documents/CV_Waste_Disposal_System.ipynb"
-                       class="project-link">
-                        View notebook →
+
+                    <a
+                        href="https://github.com/ClarisaUngurean/ClarisaUngurean.github.io/blob/main/documents/CV_Waste_Disposal_System.ipynb"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View code on GitHub →
                     </a>
+
                 </div>
-        
+
+
+                <!-- PROGRAM -->
                 <div class="resource-card">
+
                     <p class="project-type">PROGRAM</p>
+
                     <h3>U of T Engineering CREATE</h3>
+
                     <p>
-                        Artificial Intelligence: Sorting It Out!<br>
+                        Artificial Intelligence: Sorting It Out!
+                        <br>
                         July 28 – August 1, 2025
                     </p>
-        
-                    <a href="documents/ai-create-certificate.png"
-                       class="project-link">
+
+                    <p>
+                        Completed through the University of Toronto
+                        Faculty of Applied Science & Engineering.
+                    </p>
+
+                    <a
+                        href="documents/ai-create-certificate.png"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         View certificate →
                     </a>
+
                 </div>
-        
+
             </div>
+
         </section>
+
+
+        <!-- BACK TO PROJECTS -->
+        <section class="project-bottom">
+
+            <p class="section-label">MORE WORK</p>
+
+            <a class="button secondary" href="index.html#projects">
+                ← Back to all projects
+            </a>
+
+        </section>
+
     </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            Clarisa Ungurean ·
+            <a href="https://github.com/ClarisaUngurean" target="_blank">
+                GitHub
+            </a>
+        </p>
+
+    </footer>
 
 </body>
 
