@@ -198,3 +198,20 @@ footer {
         flex-wrap: wrap;
     }
 }
+.project-hero {
+    padding: 70px 0 50px;
+    max-width: 800px;
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 14px;
+    margin: 25px 0;
+    border: 1px solid #e0e3ea;
+}
+
+.project-video {
+    width: 100%;
+    border-radius: 14px;
+    margin: 25px 0;
+}
