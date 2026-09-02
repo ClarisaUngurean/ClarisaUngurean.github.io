@@ -27,91 +27,122 @@
 
         <section class="project-hero">
             <p class="eyebrow">
-                ARTIFICIAL INTELLIGENCE · COMPUTER VISION
+                COMPUTER VISION · MACHINE LEARNING · UNIVERSITY OF TORONTO
             </p>
-
-            <h1>Waste Disposal Classifier</h1>
-
+        
+            <h1>AI Waste Disposal Classifier</h1>
+        
             <p class="hero-text">
-                An image classification project developed during the AI CREATE
-                summer program at the University of Toronto. The project explored
-                how machine learning could be used to classify waste items and
-                support more accurate disposal decisions.
+                A computer vision system that identifies common waste items through a
+                live camera feed and recommends the appropriate disposal method.
+                Developed during the University of Toronto Engineering CREATE
+                Artificial Intelligence program.
+            </p>
+        
+            <p class="tools">
+                Python · TensorFlow/Keras · OpenCV · NumPy · Pandas · Teachable Machine
             </p>
         </section>
 
         <section>
-            <h2>Project Overview</h2>
-
+            <h2>The Problem</h2>
+        
             <p>
-                The goal of this project was to create a system capable of
-                identifying different categories of waste from images. I worked
-                on developing and testing a classifier that could distinguish
-                between disposal categories and explored how image classification
-                could be applied to an environmental problem.
+                Waste sorting can become confusing when different materials require
+                different disposal methods. This project explored how computer vision
+                could help automate that decision by recognizing an object and
+                recommending where it should be disposed.
             </p>
         </section>
 
-        <section>
-            <h2>What I Did</h2>
-
+       <section>
+            <h2>What I Built</h2>
+        
             <p>
-                Add a more specific description here once you remember the exact
-                steps you took, such as how you collected or prepared the data,
-                what model or tool you used, how you trained the classifier,
-                and how you evaluated its predictions.
+                I worked on a computer vision prototype that processes a live webcam
+                feed, identifies a waste item using an image classification model,
+                and maps the prediction to an appropriate disposal category.
+            </p>
+        
+            <p>
+                The system processes each camera frame with OpenCV, passes the image
+                to a TensorFlow/Keras classification model, evaluates the model's
+                confidence, and displays both the detected object and its recommended
+                disposal method directly on the video feed.
             </p>
         </section>
 
         <section>
-            <h2>Demo</h2>
+            <h2>How It Works</h2>
+        
+            <div class="process">
+        
+                <div class="process-step">
+                    <h3>1. Capture</h3>
+                    <p>
+                        OpenCV captures images continuously from a live webcam feed.
+                    </p>
+                </div>
+        
+                <div class="process-step">
+                    <h3>2. Classify</h3>
+                    <p>
+                        Each frame is resized and normalized before being passed to
+                        the trained image classification model.
+                    </p>
+                </div>
+        
+                <div class="process-step">
+                    <h3>3. Recommend</h3>
+                    <p>
+                        Predictions with more than 65% confidence are mapped to the
+                        corresponding disposal category and displayed to the user.
+                        Lower-confidence predictions are handled separately to avoid
+                        presenting uncertain classifications as reliable results.
+                    </p>
+                </div>
+        
+            </div>
+        </section>
 
+        <section>
+            <h2>Live Demo</h2>
+        
+            <p>
+                The classifier processes the webcam feed in real time and displays
+                its predicted waste category and disposal recommendation.
+            </p>
+        
             <video class="project-video" controls>
-                <source src="videos/waste-classifier-demo.mp4" type="video/mp4">
+                <source src="videos/waste-classifier-demo.mov" type="video/quicktime">
+                Your browser does not support video playback.
             </video>
         </section>
 
         <section>
-            <h2>Project Images</h2>
-
-            <img
-                class="project-image"
-                src="images/waste-classifier.png"
-                alt="Waste disposal classifier"
-            >
-        </section>
-
-        <section>
-            <h2>Code</h2>
-
-            <p>
-                You can view the project code and implementation on GitHub.
-            </p>
-
-            <a
-                class="button secondary"
-                href="YOUR-PROJECT-GITHUB-LINK"
-                target="_blank"
-            >
-                View Code on GitHub
-            </a>
-        </section>
-
-        <section>
-            <h2>Certificate</h2>
-
-            <p>
-                Completed as part of the AI CREATE summer program at the
-                University of Toronto.
-            </p>
-
-            <a
-                class="button secondary"
-                href="documents/ai-create-certificate.pdf"
-                target="_blank"
-            >
-                View Certificate
-            </a>
+            <h2>Program</h2>
+        
+            <div class="credential">
+        
+                <div>
+                    <h3>CREATE: Artificial Intelligence — Sorting It Out!</h3>
+        
+                    <p>
+                        University of Toronto · Faculty of Applied Science & Engineering
+                        <br>
+                        July 28 – August 1, 2025
+                    </p>
+                </div>
+        
+                <a
+                    class="button secondary"
+                    href="documents/ai-create-certificate.jpg"
+                    target="_blank"
+                >
+                    View Certificate →
+                </a>
+        
+            </div>
         </section>
 
     </main>
