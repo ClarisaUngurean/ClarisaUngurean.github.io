@@ -383,3 +383,22 @@ footer {
         gap: 20px;
     }
 }
+.project-video {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    max-height: 500px;
+    margin: 0 auto;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.video-container {
+    max-width: 680px;
+    margin: 35px auto 0;
+    padding: 12px;
+    background: white;
+    border: 1px solid #e0e3ea;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.06);
+}
