@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electromagnetic Waves & Fresnel Equations | Clarisa Ungurean</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- MathJax allows equations to display nicely -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                displayMath: [['$$', '$$']]
+            }
+        };
+    </script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+        async>
+    </script>
+</head>
+
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <div class="nav-name">
+            <a href="index.html">Clarisa Ungurean</a>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#experience">Experience</a>
+        </div>
+
+    </nav>
+
+
+    <main>
+
+
+        <!-- HERO -->
+
+        <section class="project-hero">
+
+            <a class="back-link" href="index.html#projects">
+                ← Back to projects
+            </a>
+
+            <p class="eyebrow">
+                APPLIED MATHEMATICS · ELECTROMAGNETISM · RESEARCH
+            </p>
+
+            <h1>Electromagnetic Waves & Fresnel Equations</h1>
+
+            <p class="hero-text">
+                A summer reading and research project exploring the mathematics
+                governing electromagnetic waves at material interfaces, with a
+                focus on reflection, transmission, polarization, Fresnel equations,
+                and extensions to lossy media.
+            </p>
+
+
+            <div class="project-meta">
+
+                <div>
+                    <span>INSTITUTION</span>
+                    <strong>University of Waterloo</strong>
+                </div>
+
+                <div>
+                    <span>YEAR</span>
+                    <strong>2026</strong>
+                </div>
+
+                <div>
+                    <span>TOOLS & TOPICS</span>
+                    <strong>
+                        Maple · Electromagnetism · Applied Mathematics ·
+                        Mathematical Modelling
+                    </strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- OVERVIEW -->
+
+        <section>
+
+            <p class="section-label">OVERVIEW</p>
+
+            <h2>The Project</h2>
+
+            <p class="section-intro">
+                During the summer, I studied the mathematical description of
+                electromagnetic waves interacting with boundaries between different
+                materials. I worked through analytical derivations, mathematical
+                exercises, and computational exploration of wave behaviour.
+            </p>
+
+            <p>
+                The project connected Maxwell's equations with phenomena such as
+                reflection, transmission, polarization, refraction, and the behaviour
+                of electromagnetic waves in both ideal and lossy materials.
+            </p>
+
+        </section>
+
+
+
+        <!-- TOPICS -->
+
+        <section>
+
+            <p class="section-label">TOPICS</p>
+
+            <h2>What I Studied</h2>
+
+            <div class="process">
+
+                <div class="process-step">
+                    <span class="step-number">01</span>
+                    <h3>Wave Propagation</h3>
+
+                    <p>
+                        Plane electromagnetic waves, wave vectors, electric and
+                        magnetic field relationships, and propagation through
+                        different media.
+                    </p>
+                </div>
+
+
+                <div class="process-step">
+                    <span class="step-number">02</span>
+                    <h3>Material Interfaces</h3>
+
+                    <p>
+                        Reflection, transmission, Snell's law, electromagnetic
+                        boundary conditions, and phase matching at interfaces.
+                    </p>
+                </div>
+
+
+                <div class="process-step">
+                    <span class="step-number">03</span>
+                    <h3>Polarization</h3>
+
+                    <p>
+                        The behaviour of s- and p-polarized electromagnetic waves
+                        and how polarization affects Fresnel reflection and
+                        transmission coefficients.
+                    </p>
+                </div>
+
+
+                <div class="process-step">
+                    <span class="step-number">04</span>
+                    <h3>Fresnel Equations</h3>
+
+                    <p>
+                        Derivation and interpretation of the Fresnel coefficients
+                        describing the amplitudes of reflected and transmitted
+                        waves.
+                    </p>
+                </div>
+
+
+                <div class="process-step">
+                    <span class="step-number">05</span>
+                    <h3>Lossy Media</h3>
+
+                    <p>
+                        Extension of the electromagnetic model to materials with
+                        conductivity and complex electromagnetic properties.
+                    </p>
+                </div>
+
+
+                <div class="process-step">
+                    <span class="step-number">06</span>
+                    <h3>Special Wave Behaviour</h3>
+
+                    <p>
+                        Brewster's angle, total internal reflection, evanescent
+                        waves, and conservation of electromagnetic energy.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- MATHEMATICAL FRAMEWORK -->
+
+        <section>
+
+            <p class="section-label">MATHEMATICAL FRAMEWORK</p>
+
+            <h2>From Maxwell's Equations to Plane Waves</h2>
+
+            <p>
+                A central part of the project was understanding how the electric
+                and magnetic fields of a plane electromagnetic wave are related.
+                I represented a plane wave using the complex exponential form
+            </p>
+
+            <div class="equation-card">
+
+                $$\mathbf{E}(\mathbf{r},t)
+                =
+                \mathbf{E}_0
+                e^{i(\mathbf{k}\cdot\mathbf{r}-\omega t)}.$$
+
+            </div>
+
+            <p>
+                Substituting this form into Faraday's law,
+            </p>
+
+            <div class="equation-card">
+
+                $$\nabla \times \mathbf{E}
+                =
+                -\frac{\partial \mathbf{B}}{\partial t},$$
+
+            </div>
+
+            <p>
+                transforms the spatial and time derivatives into factors involving
+                the wave vector $\mathbf{k}$ and angular frequency $\omega$.
+                This gives
+            </p>
+
+            <div class="equation-card">
+
+                $$\mathbf{k}\times\mathbf{E}
+                =
+                \omega\mathbf{B},$$
+
+                $$\mathbf{B}
+                =
+                \frac{1}{\omega}
+                \mathbf{k}\times\mathbf{E}.$$
+
+            </div>
+
+            <p>
+                This relationship allowed me to derive the corresponding magnetic
+                field for each incident, reflected, and transmitted wave.
+            </p>
+
+        </section>
+
+
+
+        <!-- INTERFACE GEOMETRY -->
+
+        <section>
+
+            <p class="section-label">DERIVATION</p>
+
+            <h2>Describing the Interface</h2>
+
+            <p>
+                I considered an electromagnetic wave incident on the boundary
+                between two materials. The incident, reflected, and transmitted
+                waves each have their own wave vectors:
+            </p>
+
+            <div class="equation-card">
+
+                $$\mathbf{k}_i,$$
+
+                $$\mathbf{k}_r,$$
+
+                $$\mathbf{k}_t.$$
+
+            </div>
+
+            <p>
+                Matching the phase of the waves along the interface gives
+                conservation of the component of the wave vector parallel to
+                the boundary:
+            </p>
+
+            <div class="equation-card">
+
+                $$k_{ix} = k_{rx} = k_{tx}.$$
+
+            </div>
+
+            <p>
+                Together with the magnitude relation
+            </p>
+
+            <div class="equation-card">
+
+                $$|\mathbf{k}| = \frac{n\omega}{c},$$
+
+            </div>
+
+            <p>
+                this leads to Snell's law:
+            </p>
+
+            <div class="equation-card">
+
+                $$n_1 \sin\theta_i
+                =
+                n_2 \sin\theta_t.$$
+
+            </div>
+
+        </section>
+
+
+
+        <!-- P POLARIZATION -->
+
+        <section>
+
+            <p class="section-label">DERIVATION</p>
+
+            <h2>P-Polarized Waves</h2>
+
+            <p>
+                I worked through the Fresnel derivation for p-polarized light,
+                where the electric field lies in the plane of incidence.
+            </p>
+
+            <p>
+                Because electromagnetic waves are transverse,
+            </p>
+
+            <div class="equation-card">
+
+                $$\mathbf{k}\cdot\mathbf{E}=0.$$
+
+            </div>
+
+            <p>
+                For the transmitted wave, this condition gives a relationship
+                between the $x$ and $z$ components of the electric field:
+            </p>
+
+            <div class="equation-card">
+
+                $$E_{tz}
+                =
+                -\frac{k_{tx}}{k_{tz}}E_{tx}.$$
+
+            </div>
+
+            <p>
+                The magnetic field can then be obtained from
+            </p>
+
+            <div class="equation-card">
+
+                $$\mathbf{H}
+                =
+                \frac{1}{\omega\mu}
+                \mathbf{k}\times\mathbf{E}.$$
+
+            </div>
+
+            <p>
+                Applying these relationships to the incident, reflected, and
+                transmitted waves gives the field components needed to impose
+                the electromagnetic boundary conditions.
+            </p>
+
+        </section>
+
+
+
+        <!-- BOUNDARY CONDITIONS -->
+
+        <section>
+
+            <p class="section-label">BOUNDARY CONDITIONS</p>
+
+            <h2>Connecting the Waves at the Interface</h2>
+
+            <p>
+                Maxwell's boundary conditions require the appropriate tangential
+                electric and magnetic field components to match across the
+                interface.
+            </p>
+
+            <p>
+                These conditions produce a system of equations relating the
+                incident, reflected, and transmitted field amplitudes.
+                Solving that system leads to the Fresnel reflection and
+                transmission coefficients.
+            </p>
+
+            <div class="equation-card">
+
+                $$r_p
+                =
+                \frac{
+                n_2\cos\theta_i-n_1\cos\theta_t
+                }{
+                n_2\cos\theta_i+n_1\cos\theta_t
+                }$$
+
+            </div>
+
+            <p>
+                The coefficients describe how much of the electric-field
+                amplitude is reflected or transmitted when the wave reaches the
+                material boundary.
+            </p>
+
+        </section>
+
+
+
+        <!-- PHYSICAL BEHAVIOUR -->
+
+        <section>
+
+            <p class="section-label">PHYSICAL INTERPRETATION</p>
+
+            <h2>What the Equations Predict</h2>
+
+            <div class="resource-grid">
+
+
+                <div class="resource-card">
+
+                    <p class="project-type">POLARIZATION</p>
+
+                    <h3>Brewster's Angle</h3>
+
+                    <p>
+                        For p-polarized light, the reflected amplitude can vanish
+                        at a particular angle of incidence. This produces
+                        Brewster's angle, where the reflected light is completely
+                        s-polarized.
+                    </p>
+
+                </div>
+
+
+                <div class="resource-card">
+
+                    <p class="project-type">REFRACTION</p>
+
+                    <h3>Total Internal Reflection</h3>
+
+                    <p>
+                        When light travels from a higher-index material into a
+                        lower-index material beyond the critical angle, a
+                        propagating transmitted wave is no longer produced.
+                    </p>
+
+                </div>
+
+
+                <div class="resource-card">
+
+                    <p class="project-type">WAVE PHYSICS</p>
+
+                    <h3>Evanescent Waves</h3>
+
+                    <p>
+                        Under total internal reflection, the transmitted field
+                        becomes evanescent and decays exponentially away from
+                        the material boundary.
+                    </p>
+
+                </div>
+
+
+                <div class="resource-card">
+
+                    <p class="project-type">ENERGY</p>
+
+                    <h3>Reflection & Transmission</h3>
+
+                    <p>
+                        I also explored how the field-amplitude coefficients
+                        connect to reflected and transmitted electromagnetic
+                        energy.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- LOSSY MEDIA -->
+
+        <section>
+
+            <p class="section-label">EXTENSION</p>
+
+            <h2>Extending the Model to Lossy Media</h2>
+
+            <p>
+                I extended the analysis beyond ideal dielectric materials to
+                consider lossy media, where electrical conductivity introduces
+                energy dissipation.
+            </p>
+
+            <p>
+                This can be represented using a complex material response. The
+                wave number and related optical quantities can therefore become
+                complex, allowing the model to describe both wave propagation
+                and attenuation inside the material.
+            </p>
+
+            <div class="equation-card">
+
+                $$\tilde{k}=k'+ik''.$$
+
+            </div>
+
+            <p>
+                The imaginary component produces exponential attenuation of the
+                wave as it travels through the medium.
+            </p>
+
+        </section>
+
+
+
+        <!-- MAPLE -->
+
+        <section>
+
+            <p class="section-label">COMPUTATIONAL WORK</p>
+
+            <h2>Exploring the Equations with Maple</h2>
+
+            <p>
+                Alongside the analytical derivations, I used Maple to work with
+                the mathematical expressions and explore how electromagnetic
+                quantities changed as material properties and angles of incidence
+                were varied.
+            </p>
+
+            <p>
+                This helped connect the symbolic Fresnel equations with the
+                physical behaviour they predict.
+            </p>
+
+            <!--
+            Later, if you have a Maple plot screenshot, place it here:
+
+            <img
+                src="images/fresnel-maple-plot.png"
+                alt="Maple visualization of Fresnel coefficients"
+                class="project-image"
+            >
+            -->
+
+        </section>
+
+
+
+        <!-- WHAT I LEARNED -->
+
+        <section>
+
+            <p class="section-label">REFLECTION</p>
+
+            <h2>What I Took Away From the Project</h2>
+
+            <p>
+                The project gave me experience working independently through
+                advanced mathematical physics material and following a derivation
+                from fundamental electromagnetic equations to physically measurable
+                behaviour.
+            </p>
+
+            <p>
+                It also strengthened my interest in the connection between
+                mathematical modelling, physics, and computation: using equations
+                not only to describe a system, but to understand how changing
+                assumptions or material properties changes its behaviour.
+            </p>
+
+        </section>
+
+
+
+        <!-- REFERENCES -->
+
+        <section>
+
+            <p class="section-label">REFERENCES</p>
+
+            <h2>References & Further Reading</h2>
+
+            <p class="section-intro">
+                Selected resources used while studying electromagnetic wave
+                propagation, Fresnel equations, and optical interfaces.
+            </p>
+
+
+            <div class="resource-grid">
+
+
+                <!-- RESOURCE 1 -->
+
+                <div class="resource-card">
+
+                    <p class="project-type">PAPER</p>
+
+                    <h3>Paper Title</h3>
+
+                    <p>
+                        Add a short description explaining what you used this
+                        paper for.
+                    </p>
+
+                    <a
+                        href="references/YOUR-PAPER.pdf"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Read paper →
+                    </a>
+
+                </div>
+
+
+                <!-- RESOURCE 2 -->
+
+                <div class="resource-card">
+
+                    <p class="project-type">ONLINE RESOURCE</p>
+
+                    <h3>Website / Reference Title</h3>
+
+                    <p>
+                        Add a short description of how this resource contributed
+                        to the project.
+                    </p>
+
+                    <a
+                        href="PASTE-WEBSITE-URL-HERE"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Visit resource →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- BOTTOM -->
+
+        <section class="project-bottom">
+
+            <p class="section-label">MORE WORK</p>
+
+            <a class="button secondary" href="index.html#projects">
+                ← Back to all projects
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Clarisa Ungurean ·
+            <a
+                href="https://github.com/ClarisaUngurean"
+                target="_blank"
+            >
+                GitHub
+            </a>
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
